@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
+import Header from '@/components/header';
 
 export const metadata: Metadata = {
     title: 'PokeFinder',
@@ -12,7 +13,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" className="size-full bg-black">
+            <Header />
             <body>{children}</body>
         </html>
     );

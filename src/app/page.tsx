@@ -1,3 +1,3 @@
 export default function Home() {
-    return <div>dsfs</div>;
+    return <div></div>;
 }
